@@ -2,10 +2,10 @@
 
 <script>
   document.getElementById("connect-phantom-button").addEventListener("click", function() {
-    if (typeof window.phantom === "undefined") {
+    if (typeof window.phantom.solana === "undefined") {
       alert("Phantom extension is not installed or is not available.");
     } else {
-      window.phantom.connect();
+      window.phantom.solana.connect();
     }
   });
 </script>
