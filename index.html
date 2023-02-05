@@ -1,0 +1,11 @@
+<button id="connect-phantom-button">Connect to Phantom</button>
+
+<script>
+  document.getElementById("connect-phantom-button").addEventListener("click", function() {
+    if (typeof window.phantom === "undefined") {
+      alert("Phantom extension is not installed or is not available.");
+    } else {
+      window.phantom.connect();
+    }
+  });
+</script>
